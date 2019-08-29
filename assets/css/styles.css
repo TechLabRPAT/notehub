@@ -1,0 +1,71 @@
+
+
+ 
+ /* --- 検索全体のBOX (サンプル用)--- */
+.searchArea{
+  width          : 720px;              /* BOXの幅               */
+  height         : 30px;               /* BOXの高さ             */
+  margin         : auto;               /* サンプルを中心に寄せ  */
+  letter-spacing : 0.1em;              /* 文字間隔              */
+  font-weight    : bold;               /* 太字                  */
+  line-height    : 0;                  /* 標準の行高さ          */
+}
+ 
+ /* --- テキスト入力欄のSTYLE設定 --- */
+.searchArea .searchText {
+  display        : block;              /* ブロック化            */
+  float          : left;               /* 横並び                */
+  box-sizing     : border-box;         /* 枠線,余白を含んだ長さ */
+  height         : 30px;               /* 入力の高さ            */
+  width          : 600px;              /* 入力の幅              */
+  margin         : 0;                  /* 外余白                */
+  padding        : 0 12px;             /* 内余白                */
+  border         : 2px solid #007fff;  /* 枠線　幅,実践,色      */
+  border-radius  : 12px 0 0 12px;      /* 左上下の角丸          */
+  color          : #333;               /* 文字色                */
+  outline        : 0;                  /* 入力の薄い枠を非表示  */
+  font-size      : 12px;               /* フォントサイズ        */
+}
+ 
+ /* --- 検索ボタン欄のSTYLE設定 --- */
+.searchArea .searchButton {
+  float          : left;               /* 横並び                */
+  box-sizing     : border-box;         /* 枠線,余白を含んだ長さ */
+  height         : 30px;               /* 入力の高さ            */
+  margin         : 0;                  /* 外余白                */
+  padding        : 6px 10px;           /* 内余白                */
+  border         : none;               /* 枠線　幅,実践,色      */
+  border-radius  : 0 12px 12px 0;      /* 右上下の角丸          */
+  background     : #007fff;            /* ボタンの色            */
+  color          : #fff;               /* 文字色                */
+  cursor         : pointer;            /* カーソル設定          */
+  line-height    : 15px;               /* 1行の高さ             */
+  font-size      : 15px;               /* フォントサイズ        */
+}
+ 
+ /* --- 検索ボタン欄にフォーカスか来たとき --- */
+.searchArea .searchText:focus {
+  background     : #cfe7ff;            /* フォーカス時の背景色  */
+}
+ 
+ /* --- IEの入力エリア右側×消し -------------------------*/
+.searchArea .searchText::-ms-clear {
+  display        : none;               /* ×を消す              */
+}
+
+
+/* 画像のトリミング */
+.object-fit_contain {
+  object-fit: contain
+}
+
+.img-box {
+  margin: 2%;
+}
+
+.img-box img {
+  width: 240px;
+  height: 400px;
+  border: 2px solid #ccc;
+  background: #eee;
+}
