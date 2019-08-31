@@ -30,6 +30,8 @@
                     </n-link>
                 </b-col>
                 <b-col cols="4">
+                    <p>カテゴリ</p>
+                    <p>カテゴリ名</p>
                 </b-col>
                 <b-col cols="4">
                     <p>ノート評価</p>
@@ -37,13 +39,15 @@
                 </b-col>
             </b-row>
             <b-row class="text-center my-2">
-                <b-col cols="1"></b-col>
-                <b-col cols="10">
-                    <b-button variant="primary">
-                        <h2>購入</h2>
-                    </b-button>
+                <b-col cols="2">
+                    <a href="">報告</a>
                 </b-col>
-                <b-col cols="1"></b-col>
+                <b-col cols="8">
+                    <a href="">
+                        <b-button>　　今すぐ読む　　</b-button>
+                    </a>
+                </b-col>
+                <b-col cols="2"></b-col>
             </b-row>
         </b-container>
     </div>
